@@ -1,0 +1,9 @@
+
+{
+  "mcpServers": {
+    "bookings": {
+      "command": "npx",
+      "args": ["-y", "@yourorg/mcp-bookings"]
+    }
+  }
+}

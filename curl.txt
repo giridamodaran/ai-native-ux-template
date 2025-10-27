@@ -1,0 +1,2 @@
+
+curl -X POST http://localhost:8787/chat   -H 'Content-Type: application/json'   -d '{"prompt":"Create a booking for alex@example.com 2026-01-10 to 2026-01-12, Deluxe"}'

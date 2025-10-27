@@ -1,0 +1,11 @@
+
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:app="http://schemas.android.com/apk/res-auto">
+  <capability android:name="actions.intent.OPEN_APP_FEATURE">
+    android.intent.action.VIEW
+      <url-template android:value="myapp://offer/create{?reservationId,discountPct}" />
+      <parameter android:name="reservationId" android:key="reservationId" android:mimeType="https://schema.org/Text" />
+      <parameter android:name="discountPct" android:key="discountPct" android:mimeType="https://schema.org/Number" />
+    </intent>
+  </capability>
+</shortcuts>

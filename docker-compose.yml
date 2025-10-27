@@ -1,0 +1,16 @@
+
+version: "3.9"
+services:
+  chat:
+    build:
+      context: .
+      dockerfile: apps/chat-backend/Dockerfile
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      API_URL: ${API_URL}
+      API_TOKEN: ${API_TOKEN}
+      MCP_TRANSPORT: "stdio"
+      MCP_COMMAND: "node"
+      MCP_ARGS: '["/app/packages/mcp-bookings/build/index.js"]'
+    ports:
+      - "8787:8787"
