@@ -39,7 +39,7 @@
 
 ## Architecture
 
-```mermaid
+
 flowchart LR
   subgraph Client Surfaces
     A1[Web: Command Palette + Chat]
